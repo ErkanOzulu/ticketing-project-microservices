@@ -56,6 +56,12 @@ services:
       - "9092:9092"
     networks:
       - backend
+  discovery-service:
+    image: ${GROUP_ID}/discovery-service:${SERVICE_VERSION:-latest}
+    ports:
+      - "8761:8761"
+    networks:
+      - backend
 networks:
   backend:
     driver: bridge
