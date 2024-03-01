@@ -56,6 +56,19 @@ services:
       - "9092:9092"
     networks:
       - backend
+#  if you want to increase instances, you need to add new image of service with different name
+#  taskservice2:
+#    image: ${GROUP_ID}/task-service:${SERVICE_VERSION:-latest}
+#    environment:
+#      - "PROFILE=dev"
+#      - "JAVA_OPTS:-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5007 -Xms128m -Xmx256m"
+#    depends_on:
+#      database:
+#        condition: service_healthy
+#    ports:
+#      - "9092:9092"
+#    networks:
+#      - backend
   discovery-service:
     image: ${GROUP_ID}/discovery-service:${SERVICE_VERSION:-latest}
     ports:
