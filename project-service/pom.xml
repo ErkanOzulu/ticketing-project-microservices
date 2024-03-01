@@ -73,7 +73,6 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <builder>dashaun/builder:tiny</builder>
                         <name>${project.groupId}/project-service:${project.version}</name>
                     </image>
                 </configuration>
