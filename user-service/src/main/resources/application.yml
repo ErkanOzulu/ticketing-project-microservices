@@ -1,6 +1,11 @@
 spring:
   application:
     name: user-service
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://host.docker.internal:9411
   profiles:
     active: default
   jpa:
@@ -16,7 +21,7 @@ spring:
     password: 1234
     driver-class-name: org.postgresql.Driver
 server:
-  port: 9090
+  port: 9093
 
 eureka:
   instance:
