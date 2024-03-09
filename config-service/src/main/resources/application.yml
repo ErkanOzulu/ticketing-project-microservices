@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: git
+  #    active: native
+
+  cloud:
+    config:
+      server:
+#        native:
+#          search-locations: classpath:/config
+         git:
+           uri: https://github.com/ErkanOzulu/ticketing-project-microservices-config
+           default-label: main
+           username: ErkanOzulu
+           password: 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
+      fail-fast: true
+
+server:
+  port: 8888
