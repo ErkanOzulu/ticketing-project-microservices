@@ -14,8 +14,7 @@ spring:
            uri: https://github.com/ErkanOzulu/ticketing-project-microservices-config
            default-label: main
            username: ErkanOzulu
-           password: '{cipher}5ce96415797d0d452a71f753fb355c220bde6e5a7bbfdd0a723897e4f9f231e4ab66de14f2c892ba0b3cb5f26d2d3f04a48443d4f30ce17db90df9d803904423'
-      #           password: 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
+           password: '{cipher}637927818a209d1c810b676f9e4bd6a87a2907979284100daefa9a9105680e940f1f3a3821f528a37a3430903b561dbb3879512d9c8cc995bca40829aa78cf64'
 
       fail-fast: true
 encrypt:
